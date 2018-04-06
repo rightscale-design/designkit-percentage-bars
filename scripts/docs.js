@@ -1,15 +1,4 @@
-var csso = require('csso');
 var fs = require('fs');
-var inputFile = "./dist/designkit-sample.css";
-var input = fs.readFileSync(inputFile, 'utf8');
-var output = csso.minify(input);
-var outputFile = "./docs/doc.min.css";
+var module = require('../package.json')
 
-// Output css for docs
-fs.writeFile(outputFile, output.css, function(err) {
-  if (err) {
-    return console.log(err);
-  }
-
-  console.log("Success!");
-});
+fs.createReadStream('./dist/'+module.name+'.css').pipe(fs.createWriteStream('./docs/docs.css'));

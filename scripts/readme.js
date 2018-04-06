@@ -1,6 +1,5 @@
 var _ = require('lodash')
 var fs = require('fs')
-
 var module = require('../package.json')
 
 // Read external file

@@ -1,4 +1,3 @@
-
 var sass = require('node-sass');
 var fs = require('fs');
 var mkdirp = require('mkdirp');

@@ -1,11 +1,11 @@
 {
-  "name": "designkit-sample",
+  "name": "designkit-percentage-bars",
   "version": "1.0.0",
-  "description": "A Sass module for * used in RightScale apps.",
-  "homepage": "https://github.com/rightscale-design/designkit-*#readme",
+  "description": "A Sass module for percentage bars used in RightScale apps.",
+  "homepage": "https://github.com/rightscale-design/designkit-percentage-bar#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/rightscale-design/designkit-*.git"
+    "url": "git+https://github.com/rightscale-design/designkit-percentage-bar.git"
   },
   "author": {
     "name": "Jason Melgoza"
@@ -17,20 +17,19 @@
     "styles"
   ],
   "bugs": {
-    "url": "https://github.com/rightscale-design/designkit-*/issues"
+    "url": "https://github.com/rightscale-design/designkit-percentage-bar/issues"
   },
   "files": [
     "package.json",
     "LICENSE",
     "README.md",
     "CHANGELOG.md",
-    "dist/designkit-*.css",
-    "dist/designkit-*.min.css",
-    "src/_designkit-*.scss",
+    "dist/designkit-percentage-bar.css",
+    "src/_designkit-percentage-bar.scss",
     "src/index.scss"
   ],
-  "scss": "src/_designkit-*.scss",
-  "main": "dist/designkit-*.min.css",
+  "scss": "src/_designkit-percentage-bar.scss",
+  "main": "dist/designkit-percentage-bar.css",
   "browserslist": [
     "> 1%",
     "last 2 versions"
@@ -54,7 +53,7 @@
     "build:minify": "node ./scripts/minify.js",
     "build:docs": "node ./scripts/docs.js",
     "build:readme": "node ./scripts/readme.js",
-    "build:all": "npm run build:scss && npm run build:prefix && npm run build:minify && npm run build:docs && npm run build:readme",
+    "build:all": "npm run build:scss && npm run build:prefix && npm run build:docs",
     "build:serve": "run-p watch serve"
   }
 }
