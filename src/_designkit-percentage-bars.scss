@@ -1,0 +1,40 @@
+// percentage bar
+.percentage_bar {
+  position: relative;
+  height: 4px;
+  margin-top: 10px;
+  background: #eaeaea;
+  border-radius: 10px;
+  .percentage_metric {
+    position: absolute;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: $blue;
+    border-radius: 10px 0 0 10px;
+    &.percentage_bar_100,
+    &.percentage_bar_animation_100 {
+      border-radius: 10px;
+    }
+  }
+}
+
+// percentage width generator
+@for $i from 0 through 100 {
+  .percentage_bar_#{$i} {
+    width: 0% + $i;
+  }
+}
+
+// percentage width animation generator
+@for $i from 0 through 100 {
+  .percentage_bar_animation_#{$i} {
+    animation: anim_width_#{$i} 1s;
+    animation-fill-mode: forwards;
+    animation-delay: 1s;
+  }
+  @keyframes anim_width_#{$i} {
+    from { width: 0%; }
+    to   { width: 0% + $i }
+  }
+}

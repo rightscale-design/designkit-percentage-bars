@@ -11,17 +11,6 @@ npm i --save designkit-percentage-bars
 ## CSS
 
 ```css
-@charset "UTF-8";
-/*
-1. Percentage Bar
-├── 1.0 General styles
-├── 1.1 Percentage width generator
-└── 1.2 Percentage width animation generator
-*/
-/*----------------------------------------------------------------------------
-  1. Percentage Bar
-----------------------------------------------------------------------------*/
-/* ! 1.0 - General styles */
 .percentage_bar {
   position: relative;
   height: 4px;
@@ -43,7 +32,6 @@ npm i --save designkit-percentage-bars
   border-radius: 10px;
 }
 
-/* ! 1.1 - Percentage width generator */
 .percentage_bar_0 {
   width: 0%;
 }
@@ -448,7 +436,6 @@ npm i --save designkit-percentage-bars
   width: 100%;
 }
 
-/* ! 1.2 - Percentage width animation generator */
 .percentage_bar_animation_0 {
   -webkit-animation: anim_width_0 1s;
           animation: anim_width_0 1s;
